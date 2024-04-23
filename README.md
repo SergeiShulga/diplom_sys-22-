@@ -209,6 +209,54 @@ resource "yandex_alb_load_balancer" "test-balancer" {
 }
 ```
 Ansible
+подключаемся по ssh  к серверу "bastion--host", и устанавливаем на него Ansible.
+
+настроим конфигурацию Ansible, config file = /etc/ansible/ansible.cfg
+
+ansible.cfg
+
+```
+[default]
+remote_user = user
+inventory = /home/user/ansible/hosts
+private_key_file=/home/user/.ssh/ssh-key-private.rem
+host_key_checking = False
+collections_paths = /root/.ansible/collections/ansible_collections
+
+[privilege_escalation]
+become = True
+become_method = sudo
+become_user = root
+```
+
+hosts.ini
+
+```
+[all]
+web1.ru-central1.internal
+web2.ru-central1.internal
+bastion-host.ru-central1.internal
+zabbix.ru-central1.internal
+elastsicsearch.ru-central1.internal
+kibana.ru-central1.internal
+
+[web]
+web1.ru-central1.internal
+web2.ru-central1.internal
+
+[kibana]
+kibana.ru-central1.internal
+
+[zabbix]
+zabbix.ru-central1.internal
+
+[elastic]
+elastsicsearch.ru-central1.internal
+
+ansible_ssh_user=user
+ansible_ssh_private_key_file=/home/user/.ssh/ssh-key-private.rem
+
+```
 
 с помощью Ansible на виртуальные машины web1 и web2 установим NGINX
 
