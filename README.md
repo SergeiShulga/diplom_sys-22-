@@ -222,6 +222,8 @@ $ echo "deb [signed-by=/usr/share/keyrings/ansible-archive-keyring.gpg] http://p
 
 $ sudo apt update && sudo apt install ansible
 ```
+проверяем установку Ansible
+![alt text](https://github.com/SergeiShulga/13-4/blob/main/img/001.png)
 
 настроим конфигурацию Ansible, config file = /etc/ansible/ansible.cfg
 
