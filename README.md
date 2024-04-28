@@ -224,7 +224,7 @@ $ sudo apt update && sudo apt install ansible
 ```
 проверяем установку Ansible
 
-![alt text][(https://github.com/SergeiShulga/diplom_sys-22-/blob/main/img/ansible--version.png)]
+![alt text](https://github.com/SergeiShulga/diplom_sys-22-/blob/main/img/ansible--version.png)
 
 настроим конфигурацию Ansible, config file = /etc/ansible/ansible.cfg
 
