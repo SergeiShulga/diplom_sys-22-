@@ -269,6 +269,7 @@ zabbix.ru-central1.internal
 [elastic]
 elastsicsearch.ru-central1.internal
 
+[all:var]
 ansible_ssh_user=user
 ansible_ssh_private_key_file=/home/user/.ssh/ssh-key-private.rem
 
