@@ -243,8 +243,9 @@ become = True
 become_method = sudo
 become_user = root
 ```
+пропишем хосты в файле inventory = /home/user/ansible/hosts
 
-hosts.ini
+hosts
 
 ```
 [all]
