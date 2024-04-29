@@ -212,7 +212,7 @@ Ansible
 подключаемся по ssh  к серверу "bastion--host", и устанавливаем на него Ansible.
 
 ```
-sudo apt install wget gpg
+$ sudo apt install wget gpg
 
 $ UBUNTU_CODENAME=focal
 
