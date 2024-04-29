@@ -276,7 +276,7 @@ ansible_ssh_private_key_file=/home/user/.ssh/id_rsa
 ```
 проверяем доступность серверов
 
-![alt text](https://github.com/SergeiShulga/diplom_sys-22-/blob/main/img/ansible -m ping all.png)
+![alt text](https://github.com/SergeiShulga/diplom_sys-22-/blob/main/img/ansible%20-m%20ping%20all.png)
 
 на виртуальные машины web1 и web2 установим NGINX
 
