@@ -282,7 +282,7 @@ ansible_ssh_private_key_file=/home/user/.ssh/id_rsa
 ```
 $ ansible-playbook -i hosts nginx.yml
 ```
-![alt text]
+![alt text](https://github.com/SergeiShulga/diplom_sys-22-/blob/main/img/ansible-playbook%20-i%20hosts%20nginx.png)
 
 
 
