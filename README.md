@@ -286,7 +286,7 @@ $ ansible-playbook -i hosts nginx.yml
 
 Протестируйте сайт curl -v <публичный IP балансера>:80
 
-![alt text]
+![alt text](https://github.com/SergeiShulga/diplom_sys-22-/blob/main/img/curl.png)
 
 
 
