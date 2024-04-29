@@ -253,7 +253,7 @@ web1.ru-central1.internal
 web2.ru-central1.internal
 bastion-host.ru-central1.internal
 zabbix.ru-central1.internal
-elastsicsearch.ru-central1.internal
+elasticsearch.ru-central1.internal
 kibana.ru-central1.internal
 
 [web]
@@ -267,15 +267,18 @@ kibana.ru-central1.internal
 zabbix.ru-central1.internal
 
 [elastic]
-elastsicsearch.ru-central1.internal
+elasticsearch.ru-central1.internal
 
 [all:vars]
 ansible_ssh_user=user
 ansible_ssh_private_key_file=/home/user/.ssh/id_rsa
 
 ```
+проверяем доступность серверов
 
-с помощью Ansible на виртуальные машины web1 и web2 установим NGINX
+![alt text](https://github.com/SergeiShulga/diplom_sys-22-/blob/main/img/ansible -m ping all.png)
+
+на виртуальные машины web1 и web2 установим NGINX
 
 
 
