@@ -234,7 +234,7 @@ ansible.cfg
 [default]
 remote_user = user
 inventory = /home/user/ansible/hosts
-private_key_file=/home/user/.ssh/ssh-key-private.rem
+private_key_file=/home/user/.ssh/id_rsa
 host_key_checking = False
 collections_paths = /root/.ansible/collections/ansible_collections
 
@@ -269,9 +269,9 @@ zabbix.ru-central1.internal
 [elastic]
 elastsicsearch.ru-central1.internal
 
-[all:var]
+[all:vars]
 ansible_ssh_user=user
-ansible_ssh_private_key_file=/home/user/.ssh/ssh-key-private.rem
+ansible_ssh_private_key_file=/home/user/.ssh/id_rsa
 
 ```
 
