@@ -279,8 +279,10 @@ ansible_ssh_private_key_file=/home/user/.ssh/id_rsa
 ![alt text](https://github.com/SergeiShulga/diplom_sys-22-/blob/main/img/ansible%20-m%20ping%20all.png)
 
 на виртуальные машины web1 и web2 установим NGINX
-
-
+```
+$ ansible-playbook -i hosts nginx.yml
+```
+![alt text]
 
 
 
