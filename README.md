@@ -275,6 +275,9 @@ ansible_ssh_private_key_file=/home/user/.ssh/id_rsa
 
 ```
 проверяем доступность серверов
+```
+$ ansible -m ping all -i hosts
+```
 
 ![alt text](https://github.com/SergeiShulga/diplom_sys-22-/blob/main/img/ansible%20-m%20ping%20all.png)
 
