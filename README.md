@@ -131,6 +131,8 @@ resource "yandex_alb_target_group" "target-group" {
   }
 }
 ```
+![alt text](https://github.com/SergeiShulga/diplom_sys-22-/blob/main/img/target.png)
+
 Создайте Backend Group, настройте backends на target group, ранее созданную, настройте healthcheck на корень (/) и порт 80, протокол HTTP.:
 
 ```
