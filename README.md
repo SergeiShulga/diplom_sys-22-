@@ -64,6 +64,8 @@ resource "yandex_vpc_subnet" "subnet-bastion" {
   
 }
 ```
+![alt text](https://github.com/SergeiShulga/diplom_sys-22-/blob/main/img/karta.png)
+
 Опишите в конфигурационном файле параметры ресурсов виртуальных машин, которые необходимо создать (пример):
 ```
 resource "yandex_compute_instance" "vm1" {
