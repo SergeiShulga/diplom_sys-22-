@@ -1,0 +1,7 @@
+---
+server.port: 5601
+
+server:
+  host: "0.0.0.0"
+
+elasticsearch.hosts: ["http://192.168.30.101:9200"]

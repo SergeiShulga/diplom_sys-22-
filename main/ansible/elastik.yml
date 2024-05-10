@@ -1,0 +1,41 @@
+---
+
+- name: Install elastic
+  hosts: elastic
+  become: yes
+
+  tasks:
+  - name: Update apt
+    apt:
+      update_cache: yes
+
+  - name: Install java
+    apt: name=openjdk-11-jdk state=latest
+
+  - name: Get elastic
+    ansible.builtin.get_url:
+      url: https://mirror.yandex.ru/mirrors/elastic/7/pool/main/e/elasticsearch/elasticsearch-7.17.9-amd64.deb
+      dest: /home/user/
+
+  - name: Install elastic
+    apt:
+      deb: /home/user/elasticsearch-7.17.9-amd64.deb
+
+  - name: Systemctl daemon reload
+    systemd:
+      daemon_reload: true
+      name: elasticsearch.service
+      state: started
+
+  - name: Copy conf-file
+    copy:
+      src: ./files/elasticsearch.yml
+      dest: /etc/elasticsearch/elasticsearch.yml
+      mode: 0644
+      owner: root
+      group: elasticsearch
+
+  - name: Restart elastic
+    systemd:
+      name: elasticsearch.service
+      state: restarted

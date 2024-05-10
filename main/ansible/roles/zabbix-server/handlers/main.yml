@@ -1,0 +1,35 @@
+---
+# handlers file for zabbix-server
+    - name: enable and restart zabbix and webserver
+      ansible.builtin.systemd:
+        name: zabbix-server
+        enabled: true
+        masked: no
+        state: restarted
+
+    - name: enable and restart zabbix agent
+      ansible.builtin.systemd:
+        name: zabbix-agent
+        enabled: true
+        masked: no
+        state: restarted
+
+    - name: enable and restart nginx
+      ansible.builtin.systemd:
+        name: nginx
+        enabled: true
+        masked: no
+        state: restarted
+
+    - name: enable and restart php
+      ansible.builtin.systemd:
+        name: php8.1-fpm
+        enabled: true
+        masked: no
+        state: restarted
+
+    - name: restart nginx
+      ansible.builtin.systemd:
+        name: nginx
+        state: restarted
+      listen: restart nginx

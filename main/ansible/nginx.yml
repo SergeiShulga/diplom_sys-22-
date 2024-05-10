@@ -1,0 +1,44 @@
+---
+- name: Test Connection to my servres
+  hosts: web
+  become: yes
+
+  tasks:
+    - name: update apt packages # Обновление пакетов
+      apt:
+        force_apt_get: true
+        upgrade: dist
+        update_cache: yes
+      become: true
+
+    - name: Install nginx on all servers # Установка nginx
+      apt: 
+        name: nginx
+        state: latest
+        update_cache: yes
+
+- name: copy index.html webserver 1 # Копирование index.html на первый сервер
+  hosts: web1.ru-central1.internal
+  become: yes
+
+  tasks:
+    - name: copy index_new.html
+      ansible.builtin.copy:
+        src: ./www/index1.html
+        dest: /var/www/html/index.html
+        owner: root
+        group: sudo
+        mode: "0644"
+
+- name: copy index.html webserver 2 # Копирование index.html на второй сервер
+  hosts: web2.ru-central1.internal
+  become: yes
+  
+  tasks:
+    - name: copy index_new.html
+      ansible.builtin.copy:
+        src: ./www/index2.html
+        dest: /var/www/html/index.html
+        owner: root
+        group: sudo
+        mode: "0644"
