@@ -331,11 +331,11 @@ ansible-playbook -i hosts zabbix_agent.yml
 после установеи zabbix agenta  на hosts  переходим на страницу web-интерфейса zabbix сервера и настраиваем подключения
 
 
-![alt text](https://github.com/SergeiShulga/diplom_sys-22-/blob/main/img/hosts%20zabbix.png)
+![alt text](https://github.com/SergeiShulga/diplom_sys-22-/blob/main/img/web%20zabbix.png)
 
 устанавливаем elacticsearch на сервер 
 
-![alt text](https://github.com/SergeiShulga/diplom_sys-22-/blob/main/img/elactic.png)
+![alt text](https://github.com/SergeiShulga/diplom_sys-22-/blob/main/img/elastic.png)
 
 устанавливаем kibana на сервер
 
