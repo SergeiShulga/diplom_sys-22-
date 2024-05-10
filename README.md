@@ -315,5 +315,33 @@ $ ansible-playbook -i hosts nginx.yml
 $ ansible-playbook -i hosts zabbix-server.yml
 ```
 
+![alt text]
 
+после установки zabbix-server доступен по адресу
+```
+http://158.160.143.134:8080/
+```
 
+устанавливаем zabbix-agent на сервера
+```
+ansible-playbook -i hosts zabbix_agent.yml
+```
+
+![alt text]
+
+после установеи zabbix agenta  на hosts  переходим на страницу web-интерфейса zabbix сервера и настраиваем подключения
+
+![alt text]
+
+устанавливаем elacticsearch на сервер 
+
+устанавливаем kibana на сервер
+
+```
+ansible-playbook -i hosts kibana.yml
+```
+после установки kibana-server доступен по адресу
+
+```
+http://158.160.135.97:5601/
+```
