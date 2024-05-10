@@ -323,7 +323,7 @@ $ ansible-playbook -i hosts zabbix-server.yml
 http://158.160.143.134:8080/
 ```
 
-![alt text](https://github.com/SergeiShulga/diplom_sys-22-/blob/main/img/web%zabbix.png)
+![alt text](https://github.com/SergeiShulga/diplom_sys-22-/blob/main/img/web%20zabbix.png)
 
 устанавливаем zabbix-agent на сервера
 
