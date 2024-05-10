@@ -315,7 +315,7 @@ $ ansible-playbook -i hosts nginx.yml
 $ ansible-playbook -i hosts zabbix-server.yml
 ```
 
-![alt text]
+![alt text](https://github.com/SergeiShulga/diplom_sys-22-/blob/main/img/zabbix.png)
 
 после установки zabbix-server доступен по адресу
 ```
