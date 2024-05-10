@@ -315,13 +315,11 @@ $ ansible-playbook -i hosts nginx.yml
 $ ansible-playbook -i hosts zabbix-server.yml
 ```
 
-![alt text](https://github.com/SergeiShulga/diplom_sys-22-/blob/main/img/zabbix.png)
-
 после установки zabbix-server доступен по адресу
 ```
 http://158.160.143.134:8080/
 ```
-
+![alt text](https://github.com/SergeiShulga/diplom_sys-22-/blob/main/img/web zabbix.png)
 устанавливаем zabbix-agent на сервера
 ```
 ansible-playbook -i hosts zabbix_agent.yml
