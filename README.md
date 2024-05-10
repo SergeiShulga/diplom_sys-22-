@@ -304,6 +304,7 @@ $ ansible -m ping all -i hosts
 ```
 $ ansible-playbook -i hosts nginx.yml
 ```
+
 ![alt text](https://github.com/SergeiShulga/diplom_sys-22-/blob/main/img/ansible-playbook%20-i%20hosts%20nginx.png)
 
 Протестируйте сайт curl -v <публичный IP балансера>:80
@@ -311,16 +312,21 @@ $ ansible-playbook -i hosts nginx.yml
 ![alt text](https://github.com/SergeiShulga/diplom_sys-22-/blob/main/img/curl.png)
 
 устанавливаем zabbix-server
+
 ```
 $ ansible-playbook -i hosts zabbix-server.yml
 ```
 
 после установки zabbix-server доступен по адресу
+
 ```
 http://158.160.143.134:8080/
 ```
+
 ![alt text](https://github.com/SergeiShulga/diplom_sys-22-/blob/main/img/web%zabbix.png)
+
 устанавливаем zabbix-agent на сервера
+
 ```
 ansible-playbook -i hosts zabbix_agent.yml
 ```
@@ -331,7 +337,7 @@ ansible-playbook -i hosts zabbix_agent.yml
 после установеи zabbix agenta  на hosts  переходим на страницу web-интерфейса zabbix сервера и настраиваем подключения
 
 
-![alt text](https://github.com/SergeiShulga/diplom_sys-22-/blob/main/img/web%20zabbix.png)
+![alt text](https://github.com/SergeiShulga/diplom_sys-22-/blob/main/img/hosts%20zabbix.png)
 
 устанавливаем elacticsearch на сервер 
 
