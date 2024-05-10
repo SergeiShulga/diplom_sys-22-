@@ -355,5 +355,5 @@ http://158.160.135.97:5601/
 
 устанавливаем filebeats servera web1 и web2
 
-![alt] (https://github.com/SergeiShulga/diplom_sys-22-/blob/main/img/failbeat.png)
+![alt](https://github.com/SergeiShulga/diplom_sys-22-/blob/main/img/failbeat.png)
 
