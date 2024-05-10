@@ -307,6 +307,8 @@ $ ansible-playbook -i hosts nginx.yml
 
 ![alt text](https://github.com/SergeiShulga/diplom_sys-22-/blob/main/img/ansible-playbook%20-i%20hosts%20nginx.png)
 
+сайт доступен по адресу http://158.160.166.154
+
 Протестируйте сайт curl -v <публичный IP балансера>:80
 
 ![alt text](https://github.com/SergeiShulga/diplom_sys-22-/blob/main/img/curl.png)
