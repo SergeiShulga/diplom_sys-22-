@@ -357,3 +357,7 @@ http://158.160.135.97:5601/
 
 ![alt](https://github.com/SergeiShulga/diplom_sys-22-/blob/main/img/failbeat.png)
 
+
+![alt](https://github.com/SergeiShulga/diplom_sys-22-/blob/main/img/file001.png)
+
+![alt](https://github.com/SergeiShulga/diplom_sys-22-/blob/main/img/file002.png)
