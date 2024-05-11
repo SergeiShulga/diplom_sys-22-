@@ -313,6 +313,8 @@ $ ansible-playbook -i hosts nginx.yml
 
 ![alt text](https://github.com/SergeiShulga/diplom_sys-22-/blob/main/img/curl.png)
 
+![alt](https://github.com/SergeiShulga/diplom_sys-22-/blob/main/img/load-bal.png)
+
 устанавливаем zabbix-server
 
 ```
