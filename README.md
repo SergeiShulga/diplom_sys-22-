@@ -307,7 +307,7 @@ $ ansible-playbook -i hosts nginx.yml
 
 ![alt text](https://github.com/SergeiShulga/diplom_sys-22-/blob/main/img/ansible-playbook%20-i%20hosts%20nginx.png)
 
-сайт доступен по адресу http://158.160.166.154
+сайт доступен по адресу http://158.160.165.9
 
 Протестируйте сайт curl -v <публичный IP балансера>:80
 
@@ -324,7 +324,7 @@ $ ansible-playbook -i hosts zabbix-server.yml
 после установки zabbix-server доступен по адресу
 
 ```
-http://158.160.148.14:8080/
+http://158.160.158.72:8080/
 ```
 
 ![alt text](https://github.com/SergeiShulga/diplom_sys-22-/blob/main/img/web%20zabbix.png)
@@ -357,7 +357,7 @@ ansible-playbook -i hosts kibana.yml
 после установки kibana-server доступен по адресу
 
 ```
-http://158.160.155.7:5601/
+http://158.160.143.229:5601/
 ```
 ![alt](https://github.com/SergeiShulga/diplom_sys-22-/blob/main/img/elasticweb.png)
 
